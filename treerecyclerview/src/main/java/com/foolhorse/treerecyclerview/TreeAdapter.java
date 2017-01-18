@@ -78,7 +78,9 @@ public abstract class TreeAdapter<T> extends RecyclerView.Adapter<RecyclerView.V
         mAllNodes.add(node);
 
         mAllNodes = NodeHelper.getSortedNodes(mAllNodes);
-        node.getParent().setExpend(true);
+        if (node.getParent() != null ) {
+            node.getParent().setExpend(true);
+        }
         mVisibleNodes = NodeHelper.fliterVisibleNodes(mAllNodes);
         notifyDataSetChanged();
     }
