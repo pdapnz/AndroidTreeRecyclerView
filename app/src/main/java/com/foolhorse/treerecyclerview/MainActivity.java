@@ -3,19 +3,15 @@ package com.foolhorse.treerecyclerview;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.foolhorse.treerecyclerview.bean.FileBean;
-import com.foolhorse.treerecyclerview.node.Node;
 
 import java.util.ArrayList;
 import java.util.List;
